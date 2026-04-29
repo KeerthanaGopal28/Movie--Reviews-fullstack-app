@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const MongoClient = mongodb.MongoClient;
+const MongoClient = mongodb.MongoClient;  // Create a new MongoClient instance to connect to the MongoDB server
 const mongo_username = process.env['MONGO_USERNAME']
 const mongo_password = process.env['MONGO_PASSWORD']
 const uri = `mongodb://${mongo_username}:${mongo_password}@ac-2sf4kkq-shard-00-00.gonp0ge.mongodb.net:27017,ac-2sf4kkq-shard-00-01.gonp0ge.mongodb.net:27017,ac-2sf4kkq-shard-00-02.gonp0ge.mongodb.net:27017/?ssl=true&replicaSet=atlas-aco8a3-shard-0&authSource=admin&appName=Cluster1`
