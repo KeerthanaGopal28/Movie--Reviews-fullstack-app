@@ -1,6 +1,6 @@
 import app from "./server.js";
 import mongodb from "mongodb";
-//import ReviewsDAO from "/dao/reviewsDAO.js";
+import ReviewsDAO from "./dao/reviewsDAO.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -23,6 +23,7 @@ MongoClient.connect(
     process.exit(1); // Exit the process with a failure code
 }).then(
     async client => {
+        await ReviewsDAO.injectDB(client)
         app.listen(port, () => {
             console.log(`Server is running on port: ${port}`);
         })

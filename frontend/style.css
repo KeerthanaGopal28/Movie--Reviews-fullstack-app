@@ -4,7 +4,8 @@
 
 body{
     background-color: rgb(68, 68, 68);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
 }
 h3{
     color:white;
@@ -36,9 +37,8 @@ form{
     align-items: center;
 }
 input {
-    all: unset;
     font:15px system-ui;
-    color:white;
+    color:black;
     height: 100%;
     width:100%;
     padding:6px 9px;
@@ -59,4 +59,35 @@ input {
     text-align:center;
     background-color:rgb(98, 98, 98);
     width:100%;
+}
+@media (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .search-container {
+        float: none;
+        margin-top: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
 }
