@@ -83,6 +83,7 @@ input {
 @media (max-width: 480px) {
     .column {
         width: 100%;
+        padding:6px;
     }
 
     .topnav a {
@@ -102,6 +103,6 @@ input {
 
     .thumbnail {
         width: 100%;
-        height: auto;
+        height: 220px;
     }
 }
